@@ -1,0 +1,18 @@
+spring:
+  datasource:
+    username: demodb
+    url: jdbc:mysql://localhost:3306/wikimedia
+    password: '*Suji4952'
+
+  jpa:
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.MySQLDialect
+        use_sql_commands: 'true'
+        format_sql: 'true'
+        show_sql: 'true'
+    hibernate:
+      ddl-auto: update
+
+server:
+  port: 9090
